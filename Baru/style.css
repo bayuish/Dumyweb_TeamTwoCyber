@@ -4,14 +4,15 @@ header {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: spa; /* Pindahkan logo ke tengah header */
     align-items: center;
     margin: 0;
-    width: 100%; /* Menambahkan properti width: 100% untuk membuat header full-width */
-    position: fixed; /* Menambahkan properti position: fixed untuk membuat header tetap di atas */
-    top: 0; /* Menambahkan properti top: 0 untuk membuat header melekat di bagian atas */
-    left: 0; /* Menambahkan properti left: 0 untuk membuat header melekat di bagian kiri */
-    right: 0; /* Menambahkan properti right: 0 untuk membuat header melekat di bagian kanan */
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .logo {
@@ -19,7 +20,52 @@ header {
 }
 
 .logo img {
-    max-height: 50px;
+    max-height: 120px; /* Mengatur ukuran maksimum tinggi logo */
+    max-width: 400px; /* Mengatur ukuran maksimum lebar logo */
+}
+
+/* Search bar style */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="search"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-bar button[type="submit"] {
+    padding: 6px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Navigation bar style */
+nav {
+    display: flex; /* Membuat navigasi horizontal */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Membuat daftar menu navigasi horizontal */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 /* Menambahkan style untuk judul header yang berada di tengah */
@@ -41,7 +87,58 @@ h1.center {
     font-weight: bold;
     color: #333; /* Menambahkan warna teks ke headline */
 }
-/* ... Kode CSS sebelumnya ... */
+/* CSS untuk animasi transisi popup pada headline */
+@keyframes popupAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.popup-text {
+    animation: popupAnimation 1.5s ease-in-out;
+    transform-origin: center;
+}
+
+/* CSS untuk animasi efek pecah teks pada headline */
+.headline h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    position: relative;
+}
+
+/* CSS untuk animasi skala pada headline */
+.headline h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    animation: scaleText 1.5s alternate infinite; /* Animasi skala selama 1.5 detik dengan pengulangan bolak-balik */
+}
+
+/* Animasi skala */
+@keyframes scaleText {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); /* Teks diperbesar 110% */
+    }
+}
+
+
+
+
+
 
 /* Gaya untuk biodata container */
 .biodata-container {
@@ -49,8 +146,6 @@ h1.center {
     justify-content: center;
     margin-top: 50px;
 }
-
-/* ... Kode CSS sebelumnya ... */
 
 /* Gaya untuk biodata box */
 .biodata-box {
@@ -67,7 +162,6 @@ h1.center {
 .biodata-box:nth-child(1) {
     width: 350px; /* Ukuran box biodata pertama */
     height: 700px;
-    
 }
 
 /* Gaya untuk biodata box kedua */
@@ -80,7 +174,6 @@ h1.center {
     width: 320px; /* Ukuran box biodata ketiga */
 }
 
-
 /* Gaya untuk foto pada masing-masing biodata */
 .biodata-box img {
     border-radius: 50%;
@@ -88,8 +181,6 @@ h1.center {
     height: 150px; /* Ukuran tinggi foto, sesuaikan jika perlu */
     object-fit: cover; /* Agar foto terisi dengan baik di kotak, sesuaikan jika perlu */
 }
-
-/* ... Kode CSS sebelumnya ... */
 
 /* Gaya untuk social media icons */
 .social-media {
@@ -100,13 +191,9 @@ h1.center {
 
 .social-media img {
     width: 30px;
-    height: 50px;
-    margin: 0 5px;
+    height: 30px;
+    margin: 4px;
 }
-
-/* ... Kode CSS lainnya ... */
-
-/* ... Kode CSS lainnya ... */
 
 /* Gaya tambahan untuk tampilan yang menarik */
 body {
