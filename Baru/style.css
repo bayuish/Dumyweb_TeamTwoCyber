@@ -1,0 +1,115 @@
+/* Gaya untuk header box */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%; /* Menambahkan properti width: 100% untuk membuat header full-width */
+    position: fixed; /* Menambahkan properti position: fixed untuk membuat header tetap di atas */
+    top: 0; /* Menambahkan properti top: 0 untuk membuat header melekat di bagian atas */
+    left: 0; /* Menambahkan properti left: 0 untuk membuat header melekat di bagian kiri */
+    right: 0; /* Menambahkan properti right: 0 untuk membuat header melekat di bagian kanan */
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+/* Menambahkan style untuk judul header yang berada di tengah */
+h1.center {
+    text-align: center;
+    flex: 1;
+    align-items: center;
+    margin: 0;
+}
+
+/* Menambahkan style untuk headline */
+.headline {
+    text-align: center;
+    margin-top: 120px; /* Menambahkan jarak dari header */
+}
+
+.headline h2 {
+    font-size: 32px; /* Menambahkan ukuran font lebih besar untuk headline */
+    font-weight: bold;
+    color: #333; /* Menambahkan warna teks ke headline */
+}
+/* ... Kode CSS sebelumnya ... */
+
+/* Gaya untuk biodata container */
+.biodata-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* ... Kode CSS sebelumnya ... */
+
+/* Gaya untuk biodata box */
+.biodata-box {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Lebar kontainer biodata, ubah ukuran sesuai kebutuhan Anda */
+}
+
+/* Gaya untuk biodata box pertama */
+.biodata-box:nth-child(1) {
+    width: 350px; /* Ukuran box biodata pertama */
+    height: 700px;
+    
+}
+
+/* Gaya untuk biodata box kedua */
+.biodata-box:nth-child(2) {
+    width: 320px; /* Ukuran box biodata kedua */
+}
+
+/* Gaya untuk biodata box ketiga */
+.biodata-box:nth-child(3) {
+    width: 320px; /* Ukuran box biodata ketiga */
+}
+
+
+/* Gaya untuk foto pada masing-masing biodata */
+.biodata-box img {
+    border-radius: 50%;
+    width: 150px; /* Ukuran foto pada masing-masing biodata, ubah ukuran sesuai kebutuhan Anda */
+    height: 150px; /* Ukuran tinggi foto, sesuaikan jika perlu */
+    object-fit: cover; /* Agar foto terisi dengan baik di kotak, sesuaikan jika perlu */
+}
+
+/* ... Kode CSS sebelumnya ... */
+
+/* Gaya untuk social media icons */
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 50px;
+    margin: 0 5px;
+}
+
+/* ... Kode CSS lainnya ... */
+
+/* ... Kode CSS lainnya ... */
+
+/* Gaya tambahan untuk tampilan yang menarik */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
