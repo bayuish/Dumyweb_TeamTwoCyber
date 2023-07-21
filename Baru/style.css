@@ -200,3 +200,50 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ... Kode CSS sebelumnya ... */
+
+/* Gaya untuk slider otomatis */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    animation: slideAnimation 15s infinite; /* Ubah durasi sesuai kebutuhan Anda */
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+@keyframes slideAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 40% {
+        transform: translateX(-100%);
+    }
+    40%, 60% {
+        transform: translateX(-200%);
+    }
+    60%, 80% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-400%);
+    }
+}
+
+.subkonten1 {
+    text-align: center;
+    font-size: 24px; 
+}
+/* ... Kode CSS lainnya ... */
